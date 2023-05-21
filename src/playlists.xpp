@@ -1,0 +1,21 @@
+// ====================================================================
+// Defines the various playlists that control the tape unit
+// ====================================================================
+
+PLAYLIST_START(0, "Philip's dev playlist")
+    PLAYLIST_STEP(STOPPED,      MINS(0) + SECS(2))
+    PLAYLIST_STEP(FORWARD,      MINS(0) + SECS(5))
+    PLAYLIST_STEP(STOPPED,      MINS(0) + SECS(2))
+    PLAYLIST_STEP(REVERSE,      MINS(0) + SECS(5))
+    PLAYLIST_STEP(FAST_FORWARD, MINS(0) + SECS(5))
+    PLAYLIST_STEP(STOPPED,      MINS(0) + SECS(2))
+    PLAYLIST_STEP(FAST_REVERSE, MINS(0) + SECS(5))
+PLAYLIST_END()
+
+PLAYLIST_START(1, "Continous play")
+    PLAYLIST_STEP(FORWARD,      MINS(60))
+PLAYLIST_END()
+
+PLAYLIST_START(2, "Fast forward")
+    PLAYLIST_STEP(FAST_FORWARD, MINS(60))
+PLAYLIST_END()
